@@ -1,0 +1,7 @@
+/vendor
+
+/coverage
+coverage.clover
+coverage.xml
+
+phpunit.xml

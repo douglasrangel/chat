@@ -1,0 +1,28 @@
+{
+  "name": "simplon/helper",
+  "description": "Helpers for recurring requirements",
+  "homepage": "https://github.com/fightbulc/simplon_helper",
+  "type": "library",
+  "keywords": [
+    "casts",
+    "passwords",
+    "tokens"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tino Ehrich",
+      "email": "tino@bigpun.me",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "dusank/knapsack": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Simplon\\Helper\\": "src/"
+    }
+  }
+}

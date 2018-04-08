@@ -1,0 +1,9 @@
+.conversation-history {
+    overflow: auto;
+    height: 500px;
+}
+
+.online-users {
+    height: 550px;
+    overflow: auto;
+}

@@ -1,0 +1,281 @@
+[
+    {
+        "name": "gravatarphp/gravatar",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gravatarphp/gravatar.git",
+            "reference": "3cc22e8ce622b75e9f477db749d64a200b4f898b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/gravatarphp/gravatar/zipball/3cc22e8ce622b75e9f477db749d64a200b4f898b",
+            "reference": "3cc22e8ce622b75e9f477db749d64a200b4f898b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^1.11",
+            "henrikbjorn/phpspec-code-coverage": "^2.0",
+            "phpspec/phpspec": "^2.5",
+            "sllh/php-cs-fixer-styleci-bridge": "^2.0"
+        },
+        "time": "2017-01-19T06:27:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Gravatar\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Márk Sági-Kazár",
+                "email": "mark.sagikazar@gmail.com"
+            }
+        ],
+        "description": "Gravatar URL builder which is most commonly called as a Gravatar library",
+        "homepage": "http://gravatarphp.com",
+        "keywords": [
+            "avatar",
+            "gravatar",
+            "image",
+            "profile"
+        ]
+    },
+    {
+        "name": "dusank/knapsack",
+        "version": "10.0.0",
+        "version_normalized": "10.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DusanKasan/Knapsack.git",
+            "reference": "cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/DusanKasan/Knapsack/zipball/cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba",
+            "reference": "cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "ciaranmcnulty/phpspec-typehintedmethods": "^1.0",
+            "henrikbjorn/phpspec-code-coverage": "^2.0",
+            "phpmd/phpmd": "^2.0",
+            "phpspec/phpspec": "^2.0",
+            "phpunit/phpunit": "^5.0",
+            "squizlabs/php_codesniffer": "^2.0",
+            "symfony/console": "^2.7"
+        },
+        "time": "2017-04-24T22:52:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/collection_functions.php",
+                "src/utility_functions.php"
+            ],
+            "psr-4": {
+                "DusanKasan\\Knapsack\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dusan Kasan",
+                "email": "dusan@kasan.sk",
+                "homepage": "http://kasan.sk",
+                "role": "Developer"
+            }
+        ],
+        "description": "Collection library for PHP",
+        "homepage": "https://github.com/DusanKasan/Knapsack",
+        "keywords": [
+            "collections",
+            "map",
+            "reduce",
+            "sequences"
+        ]
+    },
+    {
+        "name": "simplon/helper",
+        "version": "1.0.7",
+        "version_normalized": "1.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fightbulc/simplon_helper.git",
+            "reference": "50b9078a5c2fb35a57e9cdcf48bf60142a8964ee"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fightbulc/simplon_helper/zipball/50b9078a5c2fb35a57e9cdcf48bf60142a8964ee",
+            "reference": "50b9078a5c2fb35a57e9cdcf48bf60142a8964ee",
+            "shasum": ""
+        },
+        "require": {
+            "dusank/knapsack": "^10.0",
+            "php": ">=7.1"
+        },
+        "time": "2017-08-16T11:03:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Simplon\\Helper\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Tino Ehrich",
+                "email": "tino@bigpun.me",
+                "role": "developer"
+            }
+        ],
+        "description": "Helpers for recurring requirements",
+        "homepage": "https://github.com/fightbulc/simplon_helper",
+        "keywords": [
+            "casts",
+            "passwords",
+            "tokens"
+        ]
+    },
+    {
+        "name": "simplon/mysql",
+        "version": "2.2.10",
+        "version_normalized": "2.2.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fightbulc/simplon_mysql.git",
+            "reference": "21da390cb2b3846a2407a410486b4642501e3098"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fightbulc/simplon_mysql/zipball/21da390cb2b3846a2407a410486b4642501e3098",
+            "reference": "21da390cb2b3846a2407a410486b4642501e3098",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": ">=7.1",
+            "simplon/helper": "^1.0"
+        },
+        "time": "2017-11-22T10:17:02+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Simplon\\Mysql\\": "src/",
+                "Test\\": "test/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Tino Ehrich",
+                "email": "tino@bigpun.me",
+                "role": "developer"
+            }
+        ],
+        "description": "Simplon MySQL Library",
+        "homepage": "https://github.com/fightbulc/simplon_mysql",
+        "keywords": [
+            "db",
+            "manager",
+            "mysql",
+            "pdo"
+        ]
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "v6.0.5",
+        "version_normalized": "6.0.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/cb3ea134d4d3729e7857737d5f320cce9caf4d32",
+            "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32",
+            "shasum": ""
+        },
+        "require": {
+            "ext-ctype": "*",
+            "ext-filter": "*",
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "doctrine/annotations": "1.2.*",
+            "friendsofphp/php-cs-fixer": "^2.2",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpunit/phpunit": "^4.8 || ^5.7",
+            "zendframework/zend-eventmanager": "3.0.*",
+            "zendframework/zend-i18n": "2.7.3",
+            "zendframework/zend-serializer": "2.7.*"
+        },
+        "suggest": {
+            "ext-mbstring": "Needed to send email in multibyte encoding charset",
+            "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+            "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+            "psr/log": "For optional PSR-3 debug logging",
+            "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+            "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+        },
+        "time": "2018-03-27T13:49:45+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PHPMailer\\PHPMailer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    }
+]

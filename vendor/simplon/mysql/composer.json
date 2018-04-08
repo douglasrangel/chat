@@ -1,0 +1,32 @@
+{
+  "name": "simplon/mysql",
+  "description": "Simplon MySQL Library",
+  "homepage": "https://github.com/fightbulc/simplon_mysql",
+  "type": "library",
+  "keywords": [
+    "db",
+    "pdo",
+    "mysql",
+    "manager"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tino Ehrich",
+      "email": "tino@bigpun.me",
+      "role": "developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "simplon/helper": "^1.0",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Simplon\\Mysql\\": "src/",
+      "Test\\": "test/"
+    }
+  }
+}

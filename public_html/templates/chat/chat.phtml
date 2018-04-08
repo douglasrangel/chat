@@ -1,0 +1,50 @@
+<div class="col-md-8">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Conversas
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Todos</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="all">
+                <div class="panel-body conversation-history">
+                    <ul class="media-list">
+
+                        <?php if ( is_array($this->template->messages) ) : foreach($this->template->messages as $message) : ?>
+                            <li class="media" data-msg-date="<?= $message['date']; ?>">
+                                <div class="media-body">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object img-circle " src="<?= $message['gravatar']; ?>" />
+                                        </a>
+                                        <div class="media-body" >
+                                            <?= $message['message']; ?><br />
+                                            <small class="text-muted"><?= $message['name']?> | <?= date('d/m/Y H:i:s', strtotime($message['date'])); ?></small>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php endforeach; endif; ?>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input type="text" class="form-control chat-message" placeholder="Insira uma mensagem" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-info send-message" type="button" >Enviar</button>
+                            </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

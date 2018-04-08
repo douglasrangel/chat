@@ -1,0 +1,63 @@
+<div class="col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Usuários Online
+        </div>
+        <div class="panel-body online-users">
+            <ul class="media-list">
+                <li class="media">
+                    <div class="media-body">
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object img-circle" style="max-height:40px;" src="<?= $this->template->user_session['gravatar']; ?>" />
+                            </a>
+                            <div class="media-body" >
+                                <h5><a href="#" class="new-private-chat" data-hash="<?= $this->template->user_session['user_hash']; ?>">
+                                        <?= $this->template->user_session['name']; ?> (Você)
+                                    </a>
+                                </h5>
+                                <small class="text-muted">
+                                    Entrou em
+                                    <?php
+                                        $entered_data = new DateTime($this->template->user_session['entered_at']);
+                                        echo $entered_data->format('d/m/Y à\s H:i:s');
+                                    ?>
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+            <hr/>
+            <ul class="media-list users-list">
+                <?php if ( is_array($this->template->users) ) : foreach($this->template->users as $user) : ?>
+                    <li class="media">
+                        <div class="media-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object img-circle" style="max-height:40px;" src="<?= $user['gravatar']; ?>" />
+                                </a>
+                                <div class="media-body" >
+                                    <h5><a href="#" class="new-private-chat" data-hash="<?= $user['user_hash']; ?>">
+                                            <?= $user['name']; ?>
+                                        </a>
+                                    </h5>
+                                    <small class="text-muted">
+                                        Entrou em
+                                        <?php
+                                        $entered_data = new DateTime($user['entered_at']);
+                                        echo $entered_data->format('d/m/Y à\s H:i:s');
+                                        ?>
+                                    </small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                <?php endforeach; endif; ?>
+            </ul>
+        </div>
+    </div>
+
+</div>

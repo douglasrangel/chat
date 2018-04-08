@@ -1,0 +1,8 @@
+extensions:
+  - Cjm\PhpSpec\Extension\TypeHintedMethodsExtension
+
+suites:
+  default:
+    spec_path: tests
+    namespace: DusanKasan\Knapsack
+    psr4_prefix: DusanKasan\Knapsack
